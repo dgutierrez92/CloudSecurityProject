@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- navigation -->
+    <header>
+        <h1>
+            <a href="/">
+                DANIELLE GUTIERREZ'S CYBERSECURITY BLOG!
+            </a>
+        </h1>
+        <a href="mailto:xxx@yahoo.com" class="button">Send Email</a>
+        <a href="https://www.linkedin.com/in/danielle-gutierrez-cybersecurity/" class="linkedin"><img
+                src="https://drive.google.com/uc?export=view&id=14GW-oOoadlMxUGs5FvKkgGkrihtkFyUh" alt="LinkedIn logo"
+                height="45px"></a>
+    </header>
+
+
+    <!-- "About" section -->
+    <section id="about" class="intro">
+        <!--Replace with your own image-->
+        <img src="https://drive.google.com/uc?export=view&id=1gpZCqeNHy0XKQcXkX65vt4b5PA0DefMI"
+            alt="Robert Smith picture" height=375px;>
+        <h2 class="section-title">Hi, I'm Danielle!</h2>
+        <p><b>
+          I'm an enthusiastic cybersecurity specialist who is earning a certificate from UC Berkeley's Information and Cybersecurity Engineering Bootcamp. I have experience with Windows and Linux administration techniques and hardening, vulnerability assessment, cryptography, and Bash scripting. My strengths include patience, collaboration, flexibility, quick thinking, strong customer service, and professional communication skills. In my free time, I love hanging out with my pup Harley and going to amusement parks and concerts with friends!
+        </b>
+        </p>
+    </section>
+
+
+    <!-- "Blog Posts" section -->
+    <section id="blog-post-collection" class="blog-posts">
+        <h2 class="section-title">Blog Posts</h2>
+        <article class="blog-post">
+            <img src="https://drive.google.com/uc?export=view&id=1kn0m5-gS2-K_jYgK_-zFEpxMPNyO5Ktw" alt="Image 1">
+
+            <div class="blog">
+                <h3>Humans: You are the weakest link, Goodbye!</h3>
+                <h4>social engineering, phishing, smishing</h4>
+                <p>One of the main reasons technology can be flawed is because people are flawed. Computers are machines meant to work perfectly when given a set of commands. However, because humans are unpredictable, technology can also be unpredictable or programmed incorrectly. This is what makes social engineering attacks (like phishing, smishing, and honeypot) such common cyber attacks. Most of us have heard of the Nigerian Prince email asking anyone who will listen to send their banking information in exchange for lots and lots of money. Spoiler Alert: It doesn’t happen. According to a CNBC article posted in 2019 (https://www.cnbc.com/2019/04/18/nigerian-prince-scams-still-rake-in-over-700000-dollars-a-year.html), the scam lost people over $700,000 in a year! This is an example of phishing: the sending of fraudulent emails in order to incite individuals into divulging personal information. Phishing and smishing (fraudulent text messages) work so well because they play on basic human emotions: greed, love, fear, trust. So how do we combat an attack that plays on our very nature? Training and raising awareness of the issues. If more people are aware of this type of scam and are trained to know how to spot it, the less people will fall victim. That’s why it’s so important to have at least annual cybersecurity training for your organizations and workplaces. I hope to bring more awareness to cybersecurity issues in this blog as well. Stay tuned!
+                </p>
+            </div>
+        </article>
+
+
+        <!-- second blog post -->
+        <article class="blog-post">
+            <img src="https://drive.google.com/uc?export=view&id=18apTXvlV2hnOiinUrRVqqUq8kD7Y_zWG" alt="Image-2">
+            <div class="blog">
+                <h3>Symmetric vs Asymmetric Encryption: The Less Keys the Better?</h3>
+                <h4>cryptography, encryption, symmetric encryption, asymmetric encryption, rsa encryption</h4>
+                <p>When you’re talking about keeping your data safe in transit and at rest, the safest way of protecting it is keeping it encrypted. Encryption is the process of converting data known as plaintext into encrypted data known as ciphertext which is nearly impossible to decrypt without knowing the “key”. You can think of encryption like a function. The input is the data that anyone can read. The output is a jumble of letters and numbers that make no sense to the reader. The only way of decrypting the secret message is by knowing the decryption key. This is like a function whose inverse is impossible to solve. There are two different types of encryption: symmetric and asymmetric. Symmetric encryption uses the same key to encrypt and decrypt a message. Therefore, if you’re sending messages to Person A and Person B, you will use one key for your correspondence with Person A and they’ll use that same key to decrypt your messages. Then you’ll use a different key for your correspondence with Person B and they’ll use that same key to decrypt. Mathematically, this means for N number of employees, your organization would need [N*(N-1)]/2 keys. For a company with just 100 employees, that’s 4950 keys! That’s a lot to keep track of. Our second option is asymmetric encryption. Asymmetric encryption is when each person has their own 2 keys: a public key and a private key. Their public key is public knowledge and anyone can use that key to encrypt messages they’re trying to send that person. Then their private key is kept a secret and used to decrypt messages they receive. This makes key management a lot easier because if you have N number of employees, you only need N*2 keys. So for that same company with 100 employees, they’d only need 200 keys. That’s a lot less than the 4950 keys they’d need for symmetric encryption! One of the most common types of asymmetric encryption is RSA (Rivest Shamir Adleman) encryption. RSA works by generating two extremely large prime numbers (numbers whose only factors are itself and 1). Typically these numbers are at least 600+ digits long each! Then those two large prime numbers are multiplied. From there, a combination of the Carmichael function, least common multiples, and modular arithmetic are used to find the private and public key from the multiple of those two large primes. The encryption and decryption algorithms also use modular arithmetic. There are different encryption key lengths for RSA such as 768-bit, 1024-bit, 2048-bit, and 4096-bit. It’s estimated that a non-quantum computer would take around 300 trillion years to crack RSA 2048-bit!
+                </p>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
